@@ -1,0 +1,29 @@
+
+.contact {
+  background-color: $secondBcgColor;
+  color: white;
+  height: 30vh;
+  &__container {
+    height: 100%;
+    border: 1px solid pink;
+    justify-content: space-around;
+  }
+  &__address {
+    width: 45%;
+    height: 100%;
+    border: 1px solid olive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__map {
+    width: 45%;
+    border: 1px solid olive;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

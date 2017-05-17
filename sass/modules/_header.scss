@@ -1,0 +1,96 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 1120px;
+	min-width: 200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 1em 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.2em;
+}
+h4 {
+	text-align: center;
+	font-size: 1.15em;
+	padding: 0.1em;
+}
+
+
+/*HEADER*/
+header {
+	height: 50vh;
+	background-image: url("../images/construction-site.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $firstBcgColor;
+	// filter: brightness(50%);
+	z-index: 0;
+}
+
+/*NAVIGATION*/
+.navbar {
+	background-color: $thirdBcgColor;
+	color: white;
+	font-size: 1em;
+	height: 7vh;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0;
+	}
+	&__logo {
+		background-image: url(../images/logo-white.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 5em;
+		height: 2.5em;
+		margin-left: 1em;
+	}
+	&__navigation {
+		li {
+			display: inline-block;
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			padding: 0 1em;
+		}
+	}
+}
+
+
+.presentation {
+	height: 40vh;
+	z-index: 2;
+	&__container {
+		height: 100%;
+		justify-content: space-between;
+	}
+	&__logo {
+		z-index: 2;
+		width: 40%;
+		height: 100%;
+		background-image: url("../images/logo-white.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 2em;
+	}
+	&__desc {
+		width: 60%;
+		color: white;
+	}
+}

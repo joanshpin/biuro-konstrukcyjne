@@ -1,0 +1,21 @@
+
+.team {
+
+  &__container {
+    flex-direction: column;
+  }
+  &__photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    figure {
+      width: 30%;
+    }
+    img {
+      border: 1px solid black;
+    }
+    figcaption {
+      text-align: center;
+    }
+  }
+}

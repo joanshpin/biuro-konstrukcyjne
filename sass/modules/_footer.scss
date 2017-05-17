@@ -1,0 +1,16 @@
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: $firstBcgColor;
+  .miniLogo {
+		background-image: url(../images/logo.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 5em;
+		height: 2em;
+	}
+}

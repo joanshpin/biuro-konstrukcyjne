@@ -1,6 +1,7 @@
 * {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
+	// overflow:hidden;
 }
 
 .container {
@@ -27,8 +28,8 @@ h4 {
 
 /*HEADER*/
 header {
-	height: 50vh;
-	background-image: url("../images/construction-site.jpg");
+	// height: 50vh;
+	background-image: url("../images/construction-site copy.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -43,9 +44,11 @@ header {
 	color: white;
 	font-size: 1em;
 	height: 7vh;
+	display: flex;
+	align-items: center;
+	// @include pinkBorder;
 	&__container {
-		display: flex;
-		align-items: center;
+		width: 100%;
 		justify-content: space-between;
 		padding: 0;
 	}
@@ -54,43 +57,85 @@ header {
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
-		width: 5em;
-		height: 2.5em;
-		margin-left: 1em;
+		width: 3em;
+		height: 1.5em;
+		margin-left: 2em;
 	}
 	&__navigation {
-		li {
-			display: inline-block;
+		h4.navbar__listTitle {
+			margin-right: 2em;
 			cursor: pointer;
+			@media (min-width: $secondBreakpoint) {
+				display: none;
+			}
 		}
+		ul.navbar__list {
+			display: none;
+			@media (min-width: $secondBreakpoint) {
+				display: inline-block;
+				margin-right: 2em;
+			}
+		}
+		// class added after click on menu in mobile version
+		ul.navbar__list.navbar__menuDisplayed {
+			display: block;
+			position: absolute;
+			background-color: black;
+			z-index: 2;
+			padding: 0.5em 1em;
+			right: 1em;
+			margin-top: 1em;
+		}
+
+		li.navbar__listItem {
+			cursor: pointer;
+			display: block;
+			padding: 0.5em 0;
+			@media (min-width: $secondBreakpoint) {
+				display: inline-block;
+				padding: 0.8em 0.5em;
+				// border: 1px solid pink;
+				}
+			}
 		a {
 			text-decoration: none;
 			color: white;
-			padding: 0 1em;
 		}
 	}
 }
 
 
 .presentation {
-	height: 40vh;
+	// height: 40vh;
 	z-index: 2;
 	&__container {
 		height: 100%;
 		justify-content: space-between;
+		flex-direction: column;
+		@media (min-width: $secondBreakpoint) {
+			flex-direction: row;
+		}
 	}
 	&__logo {
-		z-index: 2;
-		width: 40%;
-		height: 100%;
+		z-index: 1;
+		width: 100%;
+		height: 5vh;
 		background-image: url("../images/logo-white.png");
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
-		margin: 2em;
+		margin: 1em;
+		@media (min-width: $secondBreakpoint) {
+			width: 30%;
+			height: 12vh;
+		}
 	}
 	&__desc {
-		width: 60%;
+		width: 90%;
 		color: white;
+		overflow: hidden;
+		@media (min-width: $secondBreakpoint) {
+			width: 70%;
+		}
 	}
 }

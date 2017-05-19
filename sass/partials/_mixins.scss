@@ -21,6 +21,10 @@
 	display: none;
 }
 
-$firstCheckPoint: 380px;
-$secondCheckPoint: 600px;
-$thirdCheckPoint: 900px;
+$firstBreakpoint: 380px;
+$secondBreakpoint: 600px;
+$thirdBreakpoint: 900px;
+
+@mixin pinkBorder {
+	border: 1px solid pink;
+}

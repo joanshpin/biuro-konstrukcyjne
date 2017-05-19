@@ -1,40 +1,49 @@
 * {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	// overflow:hidden;
 }
 
 .container {
+	width: 90vw;
 	max-width: 1120px;
 	min-width: 200px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	padding: 1em 0;
+	padding: 1rem 0;
+	// @include blueBorder;
 }
 
 h3 {
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: bold;
-	padding: 0.2em;
+	// padding: 0.2em;
 }
 h4 {
 	text-align: center;
-	font-size: 1.15em;
-	padding: 0.1em;
+	font-size: 1.25em;
+	// padding: 0.1em;
+}
+h5 {
+	text-align: left;
+	font-size: 1em;
+	// padding: 0.1em;
+}
+.section__title {
+	text-align: center;
+	width: 100%;
 }
 
 
 /*HEADER*/
-header {
-	// height: 50vh;
+header.main__header {
 	background-image: url("../images/construction-site copy.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: $firstBcgColor;
-	// filter: brightness(50%);
 	z-index: 0;
 }
 
@@ -46,9 +55,7 @@ header {
 	height: 7vh;
 	display: flex;
 	align-items: center;
-	// @include pinkBorder;
 	&__container {
-		width: 100%;
 		justify-content: space-between;
 		padding: 0;
 	}
@@ -59,11 +66,9 @@ header {
 		background-repeat: no-repeat;
 		width: 3em;
 		height: 1.5em;
-		margin-left: 2em;
 	}
 	&__navigation {
 		h4.navbar__listTitle {
-			margin-right: 2em;
 			cursor: pointer;
 			@media (min-width: $secondBreakpoint) {
 				display: none;
@@ -94,7 +99,6 @@ header {
 			@media (min-width: $secondBreakpoint) {
 				display: inline-block;
 				padding: 0.8em 0.5em;
-				// border: 1px solid pink;
 				}
 			}
 		a {
@@ -106,7 +110,6 @@ header {
 
 
 .presentation {
-	// height: 40vh;
 	z-index: 2;
 	&__container {
 		height: 100%;
@@ -114,6 +117,13 @@ header {
 		flex-direction: column;
 		@media (min-width: $secondBreakpoint) {
 			flex-direction: row;
+			min-height: 250px;
+			height: 30vw;
+			max-height: 40vh;
+		}
+		@media (min-width: $thirdBreakpoint) {
+			max-height: 40vh;
+
 		}
 	}
 	&__logo {
@@ -136,6 +146,14 @@ header {
 		overflow: hidden;
 		@media (min-width: $secondBreakpoint) {
 			width: 70%;
+		}
+		@media (min-width: $thirdBreakpoint) {
+			line-height: 150%;
+		}
+		p {
+			// font-family: 'Libre Baskerville', serif;
+			// font-weight: 400;
+			// font-size: 0.8em;
 		}
 	}
 }

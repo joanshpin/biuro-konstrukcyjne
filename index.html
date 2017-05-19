@@ -6,7 +6,8 @@
     <meta name="keywords" content="Konstrukcje, biuro">
     <meta name="author" content="Joanna Szpinda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/app.js" type="text/javascript"></script>
     <script src="js/googlemap.js" type="text/javascript"></script>
@@ -14,7 +15,7 @@
   </head>
   <body>
 
-    <header>
+    <header class="main__header">
       <div class="navbar">
         <div class="container navbar__container">
           <div class="navbar__logo"></div>
@@ -44,12 +45,12 @@
 
     <section class="offer" id="offer">
       <div class="container offer__container">
-        <div class="offer__title">
+        <header class="offer__title section__title">
           <h3>Oferta</h3>
-        </div>
-        <div class="offer__desc">
+        </header>
+        <main class="offer__desc">
           <div class="offer__desc1">
-            <h4>Zapraszamy Państwa do współpracy przy projektowaniu:</h4>
+            <h5>Zapraszamy do współpracy przy projektowaniu:</h5>
             <ul>
               <li>domów jednorodzinnych</li>
               <li>budynków mieszkalnych wielorodzinnych</li>
@@ -60,7 +61,7 @@
           <div class="offer__desc2">
             <p>Oferujemy wykonanie w zakresie konstrukcji: projektu przetargowego, projektu koncepcyjnego, projektu budowlanego, projektu wykonawczego, projektu rozbiórki, ekspertyzy stanu technicznego konstrukcji obiektu istniejącego, nadzór autorski.</p>
           </div>
-        </div>
+        </main>
         <div class="offer__comment">
           <h4>Zapewniamy profesjonalną współpracę przy realizacji procesu budowlanego we wszystkich jego fazach, od koncepcji poprzez projekt, do realizacji włącznie.</h4>
         </div>
@@ -69,64 +70,112 @@
 
     <section class="contact" id="contact">
       <div class="container contact__container">
-        <div class="contact__address">
-          <h3>Adres:</h3>
-          <p> ul. Na Grządkach 5/7 </p>
-          <p> 30-421 Kraków </p>
-          <p> t: +48 12 346 18 25 </p>
-          <p> k: +48 608 691 246 </p>
-        </div>
-        <div class="contact__map" id="map">
+        <header class="contact__title section__title">
+          <h3>Kontakt</h3>
+        </header>
+        <main class="contact__info">
+          <div class="contact__address">
+            <h3>Adres:</h3>
+            <p> ul. Na Grządkach 5/7 </p>
+            <p> 30-421 Kraków </p>
+            <p> t: +48 12 346 18 25 </p>
+            <p> k: +48 608 691 246 </p>
+          </div>
+          <div class="contact__map" id="map">
 
-           <div id="map"></div>
-            <!-- <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBam9GlYpjfeF-zM0waPr_GURmG-6dg2gY&callback=initMap">
-            </script> -->
-          <h3>MAPA</h3>
-        </div>
+             <div id="map"></div>
+              <!-- <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBam9GlYpjfeF-zM0waPr_GURmG-6dg2gY&callback=initMap">
+              </script> -->
+            <h3>MAPA</h3>
+          </div>
+        </main>
       </div>
     </section>
 
     <section class="team" id="team">
       <div class="container team__container">
-        <h3>Nasz zespół:</h3>
-        <div class="team__photos">
-          <figure>
-            <img src="images/employee-photo.jpg" alt="">
+        <header class="team__title section__title">
+          <h3>Nasz zespół:</h3>
+        </header>
+      </div>
+      <div class="team__thumbnails">
+        <img src="images/employee-photo1.jpg" alt="" id="team__thumbnail-1">
+        <img src="images/employee-photo2.jpg" alt="" id="team__thumbnail-2">
+        <img src="images/employee-photo3.jpg" alt="" id="team__thumbnail-3">
+        <img src="images/employee-photo4.jpg" alt="" id="team__thumbnail-4">
+        <img src="images/employee-photo5.jpg" alt="" id="team__thumbnail-5">
+        <img src="images/employee-photo6.jpg" alt="" id="team__thumbnail-6">
+      </div>
+      <div class="container team__container">
+        <div class="team__figures">
+          <figure class="figure__displayed" id="team__figure__1">
+            <img src="images/employee-photo1.jpg" alt="">
             <figcaption>
-              <h5>Jan Kowalski</h5>
+              <h5>Jan Kowalski1</h5>
               <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
             </figcaption>
           </figure>
           <figure>
-            <img src="images/employee-photo.jpg" alt="">
+            <img src="images/employee-photo2.jpg" alt="">
             <figcaption>
-              <h5>Jan Kowalski</h5>
+              <h5>Jan Kowalski2</h5>
               <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
             </figcaption>
           </figure>
           <figure>
-            <img src="images/employee-photo.jpg" alt="">
+            <img src="images/employee-photo3.jpg" alt="">
             <figcaption>
-              <h5>Jan Kowalski</h5>
+              <h5>Jan Kowalski3</h5>
+              <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee-photo4.jpg" alt="">
+            <figcaption>
+              <h5>Jan Kowalski4</h5>
+              <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee-photo5.jpg" alt="">
+            <figcaption>
+              <h5>Jan Kowalski5</h5>
+              <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee-photo6.jpg" alt="">
+            <figcaption>
+              <h5>Jan Kowalski6</h5>
               <p>Konstruktor z 20-letnim doświadczeniem. Związany z Be37 od początku istnienia firmy.</p>
             </figcaption>
           </figure>
         </div>
+
       </div>
     </section>
 
     <section class="recomendations" id="recomendations">
-      <div class="container">
-        <div class="recomendation__logo"></div>
-        <div class="recomendation__logo"></div>
-        <div class="recomendation__logo"></div>
-        <div class="recomendation__logo"></div>
+      <div class="container recomendations__container">
+        <header class="recomendations__title section__title">
+          <h3>Współpraca</h3>
+          <h5>Dotychczas współpracowaliśmy z firmami:</h5>
+        </header>
+        <main class="recomendations__logos">
+          <div class="recomendations__logo">UCEES</div>
+          <div class="recomendations__logo">UCEES</div>
+          <div class="recomendations__logo">UCEES</div>
+          <div class="recomendations__logo">UCEES</div>
+        </main>
       </div>
     </section>
 
-    <section class="projects" id="projects">
-      <div class="container">
+    <!-- <section class="projects" id="projects">
+      <div class="container projects__container">
+        <div class="projects__title section__title">
+          <h3>Projekty</h3>
+        </div>
         <figure>
           <img src="" alt="">
           <figcaption></figcaption>
@@ -140,12 +189,12 @@
           <figcaption></figcaption>
         </figure>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="container footer__container">
         <div class="copyrights">
-          <h4>Copyright by Be37 Biuro Konstrukcyjne, 2017</h4>
+          <p>Copyright by Be37 Biuro Konstrukcyjne, 2017</p>
         </div>
         <div class="footer__social">
           <div class="footer__fb"></div>

@@ -1,34 +1,30 @@
 
 .offer {
-  // height: 40vh;
   background-color: $firstBcgColor;
 
   &__container {
-    height: 100%;
     justify-content: flex-start;
     flex-direction: column;
+    // @include pinkBorder;
   }
   &__desc {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    // align-items: center;
     flex-direction: column;
     width: 100%;
-    @include pinkBorder;
+    // @include pinkBorder;
     @media (min-width: $secondBreakpoint) {
       flex-direction: row;
       justify-content: center;
     }
   }
   &__desc1 {
-    margin: 1em;
-    height: 100%;
-    width: 90%;
-    @include pinkBorder;
+    margin: 1em 0;
     @media (min-width: $secondBreakpoint) {
       width: 45%;
     }
-    h4 {
-      text-align: left;
+    h5 {
     }
     ul {
       padding-left: 2em;
@@ -38,9 +34,9 @@
     }
   }
   &__desc2 {
-    margin: 1em;
-    width: 90%;
-    @include pinkBorder;
+    // @include pinkBorder;
+    margin: 1em 0;
+
     @media (min-width: $secondBreakpoint) {
       width: 45%;
     }
@@ -48,7 +44,6 @@
   &__comment {
     margin: 1em;
     width: 90%;
-    @include pinkBorder;
     h4 {
       text-align: left;
     }

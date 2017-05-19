@@ -1,0 +1,20 @@
+
+.recomendations {
+
+  h5 {
+    text-align: center;
+  }
+
+  &__container {
+    flex-direction: column;
+  }
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  &__logo {
+    padding: 1rem;
+  }
+}

@@ -25,6 +25,15 @@ $firstBreakpoint: 380px;
 $secondBreakpoint: 600px;
 $thirdBreakpoint: 900px;
 
+@mixin border ($color) {
+	border: 1px solid $color;
+}
 @mixin pinkBorder {
 	border: 1px solid pink;
+}
+@mixin blueBorder {
+	border: 1px solid blue;
+}
+@mixin greenBorder {
+	border: 1px solid green;
 }

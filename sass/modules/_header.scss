@@ -17,14 +17,12 @@
 
 h3 {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
-	// padding: 0.2em;
 }
 h4 {
 	text-align: center;
-	font-size: 1.25em;
-	// padding: 0.1em;
+	font-size: 1.25rem;
 }
 h5 {
 	text-align: left;
@@ -53,8 +51,11 @@ header.main__header {
 	color: white;
 	font-size: 1em;
 	height: 7vh;
+	min-height: 30px;
 	display: flex;
 	align-items: center;
+	position: fixed;
+  width: 100%;
 	&__container {
 		justify-content: space-between;
 		padding: 0;
@@ -64,8 +65,13 @@ header.main__header {
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
-		width: 3em;
-		height: 1.5em;
+		width: 3rem;
+		height: 1.5rem;
+	}
+	&__logo:hover {
+		transform: translateY(2px);
+		color: #ddd;
+		transition: all 0.3s;
 	}
 	&__navigation {
 		h4.navbar__listTitle {
@@ -78,7 +84,7 @@ header.main__header {
 			display: none;
 			@media (min-width: $secondBreakpoint) {
 				display: inline-block;
-				margin-right: 2em;
+				margin-right: 2rem;
 			}
 		}
 		// class added after click on menu in mobile version
@@ -87,23 +93,30 @@ header.main__header {
 			position: absolute;
 			background-color: black;
 			z-index: 2;
-			padding: 0.5em 1em;
-			right: 1em;
-			margin-top: 1em;
+			padding: 0.5rem 1rem;
+			right: 1rem;
+			margin-top: 1rem;
 		}
 
 		li.navbar__listItem {
 			cursor: pointer;
 			display: block;
-			padding: 0.5em 0;
+			padding: 0.5rem 0;
 			@media (min-width: $secondBreakpoint) {
 				display: inline-block;
-				padding: 0.8em 0.5em;
+				padding: 0.8rem 0.5rem;
 				}
 			}
+		li.navbar__listItem:hover {
+			transform: translateY(2px);
+			transition: all 0.3s;
+		}
 		a {
 			text-decoration: none;
 			color: white;
+		}
+		a:hover {
+			color: #ddd;
 		}
 	}
 }
@@ -115,21 +128,24 @@ header.main__header {
 		height: 100%;
 		justify-content: space-between;
 		flex-direction: column;
+		padding-top: 12vh;
 		@media (min-width: $secondBreakpoint) {
 			flex-direction: row;
-			min-height: 250px;
-			height: 30vw;
-			max-height: 40vh;
+			padding-top: 12vh;
+			min-height: 300px;
+			height: 55vw;
+    	max-height: 55vh;
 		}
 		@media (min-width: $thirdBreakpoint) {
-			max-height: 40vh;
-
+			max-height: 55vh;
+			padding-top: 12vh;
 		}
 	}
 	&__logo {
 		z-index: 1;
 		width: 100%;
 		height: 5vh;
+		min-height: 50px;
 		background-image: url("../images/logo-white.png");
 		background-position: center;
 		background-size: contain;
@@ -138,17 +154,19 @@ header.main__header {
 		@media (min-width: $secondBreakpoint) {
 			width: 30%;
 			height: 12vh;
+			min-height: 60px;
 		}
 	}
 	&__desc {
 		width: 90%;
 		color: white;
 		overflow: hidden;
+		line-height: 1.5rem;
+		padding-bottom: 1rem;
 		@media (min-width: $secondBreakpoint) {
-			width: 70%;
+			// width: 70%;
 		}
 		@media (min-width: $thirdBreakpoint) {
-			line-height: 150%;
 		}
 		p {
 			// font-family: 'Libre Baskerville', serif;
